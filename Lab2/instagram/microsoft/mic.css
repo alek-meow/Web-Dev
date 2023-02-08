@@ -1,0 +1,105 @@
+body{
+    font-family: "Calibri", sans-serif;
+}
+p{
+    margin: 0;
+}
+#окно{
+    margin: 0 50px;
+}
+#меню{
+    margin: auto 80px;
+    height: 44px;
+}
+#меню li{
+    display: inline;
+    font-size: 15px;
+    margin: 0 16px;
+}
+#меню a{
+    text-decoration: none;
+    color: black;
+}
+#left a:hover{
+    color: black;
+    text-decoration: underline;
+}
+#left{
+    float: left;
+}
+#left img{
+    width: 100px;
+}
+#right{
+    float: right;
+}
+#основное{
+
+}
+#большое{
+    width: 100%;
+    height: auto;
+    margin-bottom: 21px;
+}
+#большое img{
+    width: 100%;
+    object-fit: cover;
+    overflow: clip;
+}
+#text{
+    color: white;
+    position: absolute;
+    margin: 160px 0 0 255px;
+    width: 556px;
+}
+#text-1{
+    font-size: 41px;
+    width: 445px;
+    padding-bottom: 10px;
+}
+#text-2{
+    font-size: 16px;
+    line-height: 24px;
+}
+#большое button{
+    font-family: inherit;
+    font-weight: bolder;
+    border-width: 0;
+    color: white;
+    background: #0167b8;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+}
+#маленькие{
+    margin: 20px 100px;
+    padding-top: 40px;
+}
+#маленькие{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 20vw;
+}
+.A{
+    height: auto;
+    width: 20vw;
+    margin: 0 20px;
+    display: block;
+    font-size: 19px;
+}
+.A img{
+    width: 100%;
+}
+.заглавие{
+    display: block;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 13px;
+}
+#маленькие a{
+    display: inline-block;
+    margin: 10px 20px 0 0;
+    color: #0167b8;
+    text-decoration: none;
+}
