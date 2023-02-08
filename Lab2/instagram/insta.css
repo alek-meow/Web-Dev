@@ -1,0 +1,155 @@
+body{
+    background-color: #fafafa;
+    padding:0;
+    margin:0;
+    font-family: "Arial", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+div{
+    display: block;
+}
+#верх{
+    height: 65vh;
+    padding: 100px 0;
+}
+#основные-элементы{
+    margin: 0 auto;
+    width: 802px;
+}
+#слева{
+    margin: 3vh -4vw 3vh 0;
+    float: left;
+    height: auto;
+    width: 471px;
+}
+#слева img{
+    width: 100%;
+    height: 100%;
+    margin-left: -10px;
+    object-fit: contain;
+}
+#справа{
+    float: right;
+    height: 559px;
+    width: 355px;
+    margin: 3vh 0 3vh 2vw;
+    text-align: center;
+}
+#коробки{
+    height: 467px;
+    width: 100%;
+}
+.коробки{
+    margin: 0 0 10px 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(157, 157, 157, 0.57);
+    padding: 20px;
+    text-align: center;
+    background: white;
+}
+#большая-коробка{
+    height: 312px;
+}
+#содержимое-большой-коробки{
+    margin: 0 15px 0 24px;
+}
+#logo{
+    display: inline-block;
+    margin-block: 0;
+    font-family: "Trattatello", "brush script mt", fantasy;
+    font-size: 50px;
+}
+#поле{
+    height: 146px;
+}
+#поле button{
+    background: #b9e0fc;
+    border-width: 0;
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 3px;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+.инпут{
+    height: 18px;
+    text-align: left;
+    font-size: 14px;
+    border-radius: 3px;
+    color: rgba(157, 157, 157, 0.78);
+    border-style: solid;
+    border-color: rgba(157, 157, 157, 0.57);
+    background: rgba(234, 234, 234, 0.62);
+    border-width: 1px;
+    padding: 9px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#полосочки{
+    margin: 10px 0;
+    height: 22px;
+}
+#полосочки p{
+    margin: 0;
+}
+#полосочки span{
+    color: rgba(157, 157, 157, 0.78);
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0 10px;
+}
+#полосочки hr{
+    background: rgba(157, 157, 157, 0.78);
+    position: relative;
+    bottom: 5px;
+    display: inline-block;
+    width: 104px;
+    overflow: hidden;
+    margin: auto;
+}
+a#facebook, a#facebook:hover, a#facebook:active{
+    color: #365086;
+    font-weight: 600;
+}
+a#forgot-password, a#forgot-password:hover,a#forgot-password:active{
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #2b427d;
+}
+#маленькая-коробка{
+    height: 40px;
+}
+#содержимое-маленькой-коробки{
+    font-size: 14px;
+}
+#скачать{
+    height: 100px;
+    position: sticky;
+}
+#ссылки img{
+    margin: 10px;
+    height: 40px;
+}
+
+#низ{
+    clear: both;
+}
+#нижний-текст{
+    margin: 10px 460px;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(157, 157, 157, 0.9)
+}
+#нижний-текст li{
+    white-space: nowrap;
+    display: inline;
+    margin: 10px;
+    line-height: 30px;
+}
