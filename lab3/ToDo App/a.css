@@ -1,0 +1,93 @@
+body{
+    font-family: "Calibri", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: block;
+}
+#head{
+    height: 45px;
+    background: #313131;
+    width: 100%;
+}
+#head p{
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.55);
+    margin-left: 60px;
+    padding-top: 6px;
+    font-weight: lighter;
+}
+#main{
+    margin: 50px 30%;
+    font-size: 20px;
+}
+#big-text{
+    font-size: 60px;
+}
+#input{
+    text-align: center;
+    margin: 20px 15%;
+    font-size: 18px;
+}
+#input *{
+    display: inline-block;
+    margin: 5px;
+    font-size: inherit;
+    padding: 10px;
+    border-radius: 5px;
+}
+#input input{
+    border-color: rgba(128, 128, 128, 0.5);
+    border-width: 1px;
+    width: 80%;
+    text-align: left;
+}
+#input button{
+    text-align: center;
+    width: auto;
+    border-width: 0;
+    background: #518dc4;
+    color: white;
+}
+input:active, input:hover, input:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+#add:hover{
+    background: #41729b;
+}
+#add:hover, .delete:hover, .task input:hover{
+    cursor: pointer;
+}
+#tasks{
+    margin: 13px 0;
+    border-radius: 5px;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(128, 128, 128, 0.5);
+}
+.task{
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+}
+.task input:checked + label{
+    text-decoration: line-through;
+    color: rgba(128, 128, 128, 0.5);
+}
+.text{
+    width: 80%;
+    margin: 0 3%;
+}
+.delete{
+    width: 20px;
+    border-width: 0;
+    float: right;
+}
+img{
+    width: 20px;
+}

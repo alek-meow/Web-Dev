@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Последнее значение цикла
+Какое последнее значение выведет этот код? Почему?
+
+let i = 3;
+
+while (i) {
+  alert( i-- );
+}
+цикл работает пока i!=0, следовательно последнее выведенное значение равно 1, далее i станет равным 0 и
+цикл остановится
+}-->
+
+<!--Какие значения выведет цикл while?
+
+let i = 0;
+while (++i < 5) alert( i );
+1 2 3 4
+
+let i = 0;
+while (i++ < 5) alert( i )
+1 2 3 4 5-->
+
+<!--Какие значения выведет цикл for?
+
+for (let i = 0; i < 5; i++) alert( i );
+0 1 2 3 4
+
+for (let i = 0; i < 5; ++i) alert( i );
+0 1 2 3 4-->
+
+<!--Выведите чётные числа-->
+<script>
+  for(let i = 2; i <= 10; ++i){
+    if(i % 2 == 0) alert(i);
+  }
+</script>
+
+<!--Замените for на while-->
+<script>
+  let i = 0;
+  while(i < 3){
+    alert(`number ${i++}!`);
+  }
+</script>
+
+<!--Повторять цикл, пока ввод неверен-->
+<script>
+  while(1){
+    let number = prompt("Введите число, большее 100");
+    if(number > 100) break;
+  }
+</script>
+
+<!--Вывести простые числа-->
+<script>
+  let n = +prompt("Enter number");
+  main: for(let i = 2; i < n; ++i){
+    for(let j = 2; j < i; ++j){
+      if(i % j == 0) continue main;
+    }
+    alert(i);
+  }
+</script>
+</body>
+</html>

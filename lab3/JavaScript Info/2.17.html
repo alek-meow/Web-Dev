@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow functions, the basics</title>
+</head>
+<body>
+<script>
+  let ask = (question, yes, no) => (confirm(question)) ? yes() : no();
+  ask('Вы согласны?', () => alert('Вы согласились.'), () => alert('Вы отменили выполнение.'));
+</script>
+</body>
+</html>

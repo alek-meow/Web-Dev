@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object methods, "this"</title>
+</head>
+<body>
+<script>
+  function makeUser() {
+    return {
+      name: "John",
+      ref: this
+    };
+  }
+
+  let user = makeUser();
+
+  alert( user.ref.name ); // Каким будет результат?
+  // ошибка
+</script>
+
+<script>
+  let calculator = {
+    read(){
+      this.a = +prompt('a');
+      this.b = +prompt('b');
+    },
+    sum(){
+      return this.a + this.b;
+    },
+    mul(){
+      return this.a * this.b;
+    }
+  };
+</script>
+
+<script>
+  let ladder = {
+    step: 0,
+    up() {
+      this.step++;
+      return this;
+    },
+    down() {
+      this.step--;
+      return this;
+    },
+    showStep() {
+      alert( this.step );
+      return this;
+    }
+  };
+</script>
+</body>
+</html>

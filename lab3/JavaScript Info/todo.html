@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мой To-Do лист</title>
+</head>
+<body>
+<h1>Мой To-Do лист</h1>
+<input type="text" id="newTaskInput">
+<button onclick="addTask()">Добавить</button>
+<ul id="taskList"></ul>
+
+<script>
+  // Массив для хранения задач
+  var tasks = [];
+
+  function addTask() {
+    // Получаем значение из поля ввода
+    var newTask = document.getElementById("newTaskInput").value;
+
+    // Добавляем задачу в массив
+    tasks.push(newTask);
+
+    // Обновляем список задач
+    updateTaskList();
+
+    // Очищаем поле ввода
+    document.getElementById("newTaskInput").value = "";
+  }
+
+  function deleteTask(index) {
+    // Удаляем задачу из массива
+    tasks.splice(index, 1);
+
+    // Обновляем список задач
+    updateTaskList();
+  }
+
+  function updateTaskList() {
+    // Получаем список и очищаем его
+    var taskList = document.getElementById("taskList");
+    taskList.innerHTML = "";
+
+    // Добавляем каждую задачу в список
+    for (var i = 0; i < tasks.length; i++) {
+      var task = tasks[i];
+
+      // Создаем новый элемент списка и добавляем его в конец списка
+      var newTaskElement = document.createElement("li");
+      newTaskElement.textContent = task;
+
+      // Добавляем кнопку удаления задачи
+      var deleteButton = document.createElement("button");
+      deleteButton.textContent = "Удалить";
+      deleteButton.onclick = (function(index) {
+        return function() {
+          deleteTask(index);
+        }
+      })(i);
+      newTaskElement.appendChild(deleteButton);
+
+      taskList.appendChild(newTaskElement);
+    }
+  }
+</script>
+</body>
+</html>
