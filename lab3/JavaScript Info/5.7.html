@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function unique(arr) {
+    return Array.from(new Set(arr));
+  }
+</script>
+
+<script>
+  function aclean(arr) {
+    let map = new Map();
+    for (let word of arr) {
+      let sorted = arr[i]
+              .toLowerCase()
+              .split("")
+              .sort()
+              .join("");
+      map.set(sorted, word);
+    }
+    return Array.from(map.values());
+  }
+</script>
+<!-- потому что map.keys() возвращает не массив, а объект-->
+
+</body>
+</html>

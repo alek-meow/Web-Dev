@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function sumSalaries(salaries) {
+    let sum = 0;
+    for (let salary of Object.values(salaries)) {
+      sum += salary;
+    }
+    return sum;
+  }
+</script>
+<script>
+  function count(obj) {
+    return Object.keys(obj).length;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let str = "Hello";
+
+  str.test = 5;
+
+  alert(str.test);
+  // ошибка
+</script>
+
+<script>
+    let a = +prompt("первое число");
+    let b = +prompt("второе число");
+    alert( a + b );
+</script>
+
+<!--потому что 6.35 представляется бесконечной двоичной дробью-->
+
+<script>
+    function readNumber() {
+        let num;
+        while(1){
+            num = prompt("Число");
+            if(isFinite(num)) break;
+        }
+        if (num === null || num === '') return null;
+        return +num;
+    }
+
+    alert(readNumber());
+</script>
+
+<script>
+    let i = 0;
+    while (i != 10) {
+        i += 0.2;
+    }
+    // i никогда не станет равным 10
+</script>
+
+<script>
+    function random(min, max) {
+        return min + Math.random() * (max - min);
+    }
+</script>
+
+<script>
+    function randomInteger(min, max) {
+        // случайное число от min до (max+1)
+        let rand = min + Math.random() * (max + 1 - min);
+        return Math.floor(rand);
+    }
+</script>
+</body>
+</html>

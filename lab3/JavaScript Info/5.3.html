@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function ucFirst(str) {
+    if (!str) return str;
+    return str[0].toUpperCase() + str.slice(1);
+  }
+</script>
+<script>
+  function checkSpam(str) {
+    let lowerStr = str.toLowerCase();
+    return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+  }
+</script>
+<script>
+  function truncate(str, maxlength) {
+    return (str.length > maxlength) ?
+            str.slice(0, maxlength - 1) + '…' : str;
+  }
+</script>
+<script>
+  function extractCurrencyValue(str) {
+    return +str.slice(1);
+  }
+</script>
+</body>
+</html>
