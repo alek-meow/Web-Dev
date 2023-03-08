@@ -1,0 +1,98 @@
+body{
+  font-family: "Arial", sans-serif;
+  background: #E8E4D9;
+  color: #455949;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+
+#head{
+  z-index: 0;
+  background: #455949;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+#head li{
+  padding: 0 50px;
+  color: #E8E4D9;
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#body{
+  margin: 20px;
+}
+
+#albums li{
+  margin: 10px;
+  font-size: 20px;
+}
+button{
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 0;
+  padding: 5px;
+  font-size: 20px;
+  /*vertical-align: middle;*/
+  background-color: #455949;
+  color: #E8E4D9;
+}
+#delete{
+  font-size: 15px;
+  color: #E8E4D9;
+  background: #9B696A;
+  float: right;
+}
+button:hover{
+  cursor: pointer;
+}
+
+#album *{
+  margin-bottom: 20px;
+}
+#title *{
+  display: inline-block;
+}
+#input *{
+  display: inline-block;
+  margin: 15px 10px 15px 0;
+}
+input{
+  font-size: 20px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #455949;
+  margin: 20px;
+  padding: 5px;
+  width: 200px;
+}
+.photo *{
+  display: block;
+  margin: 4px;
+}
+.photo{
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+}
+#photos{
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 20vw;
+  flex-wrap: wrap;
+}
+
+
